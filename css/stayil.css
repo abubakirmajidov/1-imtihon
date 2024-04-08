@@ -1,0 +1,106 @@
+:root {
+  --Purple: #854dff;
+  --Light-red: #ff5757;
+  --White: #ffffff;
+  --Off-white: #f0f0f0;
+  --Light-grey: #dbdbdb;
+  --Smokey-grey: #716f6f;
+  --Off-black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-grey);
+}
+
+.card {
+  border-radius: 24px 24px 200px 24px;
+  background-color: var(--White);
+  width: 600px;
+}
+
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+.blok {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  gap: 24px;
+}
+
+.blok label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input {
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Light-grey);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 800px;
+}
+
+.submit_blok {
+  display: flex;
+  align-items: center;
+}
+
+.submit_blok hr {
+  width: 100%;
+}
+
+.submit_blok .submit_btn {
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--Purple);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+  &:hover {
+    background-color: var(--Off-black);
+  }
+}
+
+.output h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  height: fit-content;
+}
+
+.output span {
+  color: var(--Purple);
+}
+
+small {
+  color: red;
+}
